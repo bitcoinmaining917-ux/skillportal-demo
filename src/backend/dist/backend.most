@@ -1,0 +1,104 @@
+// Version: 4.0.0
+type NewActor__455161060 = {trainees : [TraineeRecord__259167255]};
+type NewActor__766146914 = {trainees : [NewRecord__407593323]};
+type NewActor__975356405 = {trainees : [TraineeRecord__736206700]};
+type NewRecord__407593323 =
+  {
+    annualYear : Text;
+    dob : Text;
+    employabilityMarks : Nat;
+    engDrawingMarks : Nat;
+    examDate : Text;
+    examSystem : Text;
+    fatherName : Text;
+    formativeAssessmentMarks : Nat;
+    itiName : Text;
+    name : Text;
+    nsqfLevel : Text;
+    practicalMarks : Nat;
+    result : Text;
+    resultDate : Text;
+    rollNumber : Text;
+    theoryMarks : Nat;
+    totalMarks : Nat;
+    trade : Text;
+    tradePracticalMarks : Nat;
+    tradeTheoryMarks : Nat;
+    workshopCalcMarks : Nat
+  };
+type OldActor__134001341 = {};
+type OldActor__204338074 = {trainees : [OldRecord__171615347]};
+type OldActor__995062047 = {trainees : [TraineeRecord__259167255]};
+type OldRecord__171615347 =
+  {
+    annualYear : Text;
+    examSystem : Text;
+    itiName : Text;
+    name : Text;
+    practicalMarks : Nat;
+    result : Text;
+    rollNumber : Text;
+    theoryMarks : Nat;
+    totalMarks : Nat;
+    trade : Text
+  };
+type TraineeRecord__259167255 =
+  {
+    annualYear : Text;
+    examSystem : Text;
+    itiName : Text;
+    name : Text;
+    practicalMarks : Nat;
+    result : Text;
+    rollNumber : Text;
+    theoryMarks : Nat;
+    totalMarks : Nat;
+    trade : Text
+  };
+type TraineeRecord__318241040 =
+  {
+    annualYear : Text;
+    dob : Text;
+    employabilityMarks : Nat;
+    engDrawingMarks : Nat;
+    examDate : Text;
+    examSystem : Text;
+    fatherName : Text;
+    formativeAssessmentMarks : Nat;
+    itiName : Text;
+    name : Text;
+    nsqfLevel : Text;
+    practicalMarks : Nat;
+    result : Text;
+    resultDate : Text;
+    rollNumber : Text;
+    theoryMarks : Nat;
+    totalMarks : Nat;
+    trade : Text;
+    tradePracticalMarks : Nat;
+    tradeTheoryMarks : Nat;
+    workshopCalcMarks : Nat
+  };
+type TraineeRecord__736206700 =
+  {
+    annualYear : Text;
+    examSystem : Text;
+    itiName : Text;
+    name : Text;
+    practicalMarks : Nat;
+    result : Text;
+    rollNumber : Text;
+    theoryMarks : Nat;
+    totalMarks : Nat;
+    trade : Text
+  };
+{
+  "20260602_000000_InitMarksheet" : OldActor__134001341 -> NewActor__975356405;
+  "20260602_120000_AddRollNumber08756845846283" :
+    (old : OldActor__995062047) -> NewActor__455161060;
+  "20260602_130000_CorrectRollNumber08756845846283" :
+    (old : OldActor__204338074) -> NewActor__766146914
+}
+actor  {
+  stable trainees : [TraineeRecord__318241040]
+};

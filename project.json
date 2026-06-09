@@ -1,0 +1,19 @@
+{
+  "overview": "A demo government portal modeled after the NCVTMIS website, featuring a Trainee MarkSheet search with sample data and classic Indian government portal styling.",
+  "features": [
+    "Trainee MarkSheet search by roll number and exam system",
+    "Sample marksheet results table with pass/fail status",
+    "Classic Indian government portal layout and styling",
+    "Navigation bar with all portal sections",
+    "Footer with static hit counters"
+  ],
+  "category": "government-portal",
+  "tags": [
+    "government",
+    "portal",
+    "education",
+    "india",
+    "marksheet"
+  ],
+  "last_updated": "2026-06-02T10:15:24.314Z"
+}

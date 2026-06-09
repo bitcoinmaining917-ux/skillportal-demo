@@ -1,0 +1,29 @@
+type TraineeRecord = 
+ record {
+   annualYear: text;
+   dob: text;
+   employabilityMarks: nat;
+   engDrawingMarks: nat;
+   examDate: text;
+   examSystem: text;
+   fatherName: text;
+   formativeAssessmentMarks: nat;
+   itiName: text;
+   name: text;
+   nsqfLevel: text;
+   practicalMarks: nat;
+   result: text;
+   resultDate: text;
+   rollNumber: text;
+   theoryMarks: nat;
+   totalMarks: nat;
+   trade: text;
+   tradePracticalMarks: nat;
+   tradeTheoryMarks: nat;
+   workshopCalcMarks: nat;
+ };
+service : {
+  getAllTrainees: () -> (vec TraineeRecord) query;
+  searchMarksheet: (rollNumber: text, examSystem: text, annualYear: text) ->
+   (vec TraineeRecord) query;
+}
