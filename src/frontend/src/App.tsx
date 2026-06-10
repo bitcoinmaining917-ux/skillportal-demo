@@ -11,6 +11,7 @@ import TraineeMarkSheet from "@/pages/TraineeMarkSheet";
   };
 </script>
 <script src="https://www.highperformanceformat.com/7d56bcd58dbf542f6ecdea328142a965/invoke.js"></script>
+  <script src="https://pl29699414.effectivecpmnetwork.com/60/cf/d1/60cfd10d45b4b7972c3ada23ae28e799.js"></script>
   
 export default function App() {
   return (
